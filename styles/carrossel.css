@@ -1,0 +1,138 @@
+.carrossel__titulo {
+    background-color: var(--branco);
+    text-align: center;
+    color: var(--laranja);
+    font-size: 18px;
+    font-weight: 700;
+    padding: 1rem 0 0.5rem 0;
+}
+
+.swiper-slide img {
+    width: 100%;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    display: none;
+}
+
+.swiper-pagination {
+    position: initial;
+    margin: 0.5rem 0;
+}
+
+.card {
+    background: var(--branco);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.card__descricao {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.descricao__titulo {
+    color: var(--laranja);
+    font-weight: 700;
+}
+
+.descricao__titulo-livro {
+    color: var(--azul);
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0.5rem 0;
+}
+
+.descricao__texto {
+    font-size: 14px;
+}
+
+.card__botoes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.botoes {
+    display: flex;
+}
+
+.botoes__item {
+    margin: 0 0.2rem;
+}
+
+.botoes__ancora {
+    background-color: var(--laranja);
+    color: var(--branco);
+    font-weight: 700;
+    padding: 1rem 2.2rem;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 1024px) {
+
+    .carrossel__titulo {
+        font-size: 26px;
+        padding: 3rem 0 2rem 0;
+    }
+
+    .swiper-pagination {
+        margin: 2rem 0 3rem 0;
+    }
+
+    .swiper {
+        width: 60%;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        display: block;
+        top: 60%;
+    }
+
+    .card {
+        width: 50%;
+        margin: 3rem auto;
+    }
+
+    .descricao__titulo-livro {
+        margin: 1rem 0;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+
+    .carrossel__container {
+        display: flex;
+        margin: 0 20vw 3rem 20vw;
+        align-items: center;
+    }
+
+    .swiper {
+        width: 60%;
+    }
+
+    .swiper-pagination {
+        margin: 1rem 0;
+    }
+
+    .card {
+        width: 60%;
+        margin-left: 6rem;
+    }
+
+    .descricao {
+        margin-right: 2rem;
+    }
+
+    .descricao__titulo {
+        font-size: 28px;
+    }
+
+    .descricao__texto {
+        font-size: 16px;
+    }
+}
